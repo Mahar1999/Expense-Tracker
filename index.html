@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="icon" href="/resources/siteLogo.png" type="image/icon type" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div class="heading">
+    <h1 class="primaryHeading">expense tracker</h1>
+    <div class="dateTime">date/time</div>
+  </div>
+
+  <div class="addExpense">
+    <div class="secondaryHeading">Add new Item from here</div>
+    <div class="input">
+      <div class="input__Container">
+        <label for="expName">Name :</label>
+        <input type="text" name="expName" placeholder="Name of expense..." class="input__Container--Name">
+      </div>
+
+      <div class="input__Container">
+        <label for="expdate">Date :</label>
+        <input type="date" name="expdate" placeholder="Date of expense..." class="input__Container--Date">
+      </div>
+
+      <div class="input__Container">
+        <label for="expAmount">Amount :</label>
+        <input type="number" name="expAmount" placeholder="Amount of expense..." class="input__Container--Amount">
+      </div>
+
+      <div class="input__Container">
+        <button class="input__button">Add Item</button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="list ">
+    <h1 class="listHeading secondaryHeading">Expense List</h1>
+    <table class="ExpenseList">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Delete Option</th>
+        </tr>
+      </thead>
+
+      <tbody id="AddedList">
+        <!-- <tr>
+          <td>Saket</td>
+          <td>21-12-2021</td>
+          <td>5000rs</td>
+          <td><button class="delete__button">Delete</button></td>
+        </tr> -->
+      </tbody>
+
+    </table>
+  </div>
+  </div>
+  <div class="footer">
+    <p class="copyright">
+      &copy; Copyright by
+      <a class="twitter-link" target="_blank" href="https://twitter.com/saketsingh1999">Saket Mahar</a>. Use for
+      learning or your portfolio. Don't use to teach. Don't claim
+      as your own.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
